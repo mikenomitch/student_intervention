@@ -34,8 +34,12 @@ In general we can say this dataset is fairly small and has a high number of feat
 
 Drop some links/decision trees here as needed.
 1. http://scikit-learn.org/stable/tutorial/machine_learning_map/
+2. http://scikit-learn.org/stable/auto_examples/classification/plot_classifier_comparison.html#sphx-glr-auto-examples-classification-plot-classifier-comparison-py
+
 
 ## Gaussian Naive Bayes (GaussianNB)
+
+
 
 
 
@@ -55,9 +59,48 @@ Drop some links/decision trees here as needed.
 
   in general this seems like a solid approach. it worked well for titanic data which was bigger but only one order of magnitude away. potentially using the ensemble method would be nice?
 
+
+
+
+
+
+
+
 ## Ensemble Methods (Bagging, AdaBoost, Random Forest, Gradient Boosting)
 
+  - http://scikit-learn.org/stable/modules/ensemble.html
+
+  What is each of these? Brief explainer:
+  - Bagging: foo
+  - AdaBoost: foo
+  - Random Forest: foo
+  - Gradient Boosting: foo
+
+  PROS:
+    - max_features can cut down our dimensionality
+    - big advantage not overfitting... but we dont really
+      need to run on tons of data sinc our N is low
+    -
+  CONS:
+
+
+
+
+
+
+
 ## K-Nearest Neighbors (KNeighbors)
+  - http://scikit-learn.org/stable/modules/neighbors.html
+  - http://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html
+  - https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm
+
+  PROS:
+    - simple
+    - should be good with a low N
+  CONS:
+    - needs to remember data: unimportant in this case
+    - The accuracy of the k-NN algorithm can be severely degraded by the presence of noisy or irrelevant features (from wikipedia)
+      - would probably need some dimensionality reduction in our case
 
 ## Stochastic Gradient Descent (SGDC)
 
@@ -72,8 +115,24 @@ Drop some links/decision trees here as needed.
   This probably isn't great because simplicity and efficiency are the two best features, but we don't seem to need these at this scale.
 
 
+
+
+
+
+
+
+
 ## Support Vector Machines (SVM/SVC)
 
 Link one above immediately points us in the direction of Linear SVC for small sample sizes (under 100K). It tries to fall back onto K Nearest Neighbors then SVC with emsemble learning if that fails.
+
+
+
+
+
+
+
+
+
 
 ## Logistic Regression
