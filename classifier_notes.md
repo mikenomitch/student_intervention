@@ -71,7 +71,8 @@ Drop some links/decision trees here as needed.
   - http://scikit-learn.org/stable/modules/ensemble.html
 
   What is each of these? Brief explainer:
-  - Bagging: foo
+  - Bagging:
+    - 
   - AdaBoost: foo
   - Random Forest: foo
   - Gradient Boosting: foo
