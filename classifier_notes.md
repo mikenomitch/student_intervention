@@ -60,30 +60,28 @@ Drop some links/decision trees here as needed.
   in general this seems like a solid approach. it worked well for titanic data which was bigger but only one order of magnitude away. potentially using the ensemble method would be nice?
 
 
-
-
-
-
-
-
 ## Ensemble Methods (Bagging, AdaBoost, Random Forest, Gradient Boosting)
 
   - http://scikit-learn.org/stable/modules/ensemble.html
 
   What is each of these? Brief explainer:
   - Bagging:
-    - 
-  - AdaBoost: foo
-  - Random Forest: foo
-  - Gradient Boosting: foo
+    - averaging the outputs of various models
+      to create a new output with low variance and
+      low overfitting
+  - Random Forest:
+    - Bagging with a bunch of decision trees
+    - Each tree will cast a vote for a model
+  - Gradient Boosting:
+    -
+  - Adaptive Boosting (AdaBoost):
+    - iteratively re-fit submodules (boosting !== bagging)
 
   PROS:
     - max_features can cut down our dimensionality
     - big advantage not overfitting... but we dont really
       need to run on tons of data sinc our N is low
-    -
   CONS:
-
 
 
 
@@ -119,21 +117,14 @@ Drop some links/decision trees here as needed.
 
 
 
-
-
-
-
 ## Support Vector Machines (SVM/SVC)
 
-Link one above immediately points us in the direction of Linear SVC for small sample sizes (under 100K). It tries to fall back onto K Nearest Neighbors then SVC with emsemble learning if that fails.
-
-
-
-
-
+Link one above immediately points us in the direction of Linear SVC for small sample sizes (under 100K).
+It tries to fall back onto K Nearest Neighbors then SVC with emsemble learning if that fails.
 
 
 
 
 
 ## Logistic Regression
+
